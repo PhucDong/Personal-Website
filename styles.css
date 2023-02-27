@@ -1,0 +1,508 @@
+/* Universal styles */
+:root {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+/* Header */
+header {
+    background-color: #0A1045;
+    color: #fff;
+    padding: 16px 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header img {
+    width: 20px;
+    height: 20px;
+}
+
+header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+    display: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header ul li {
+    padding: 12px 0;
+}
+
+header .nav-link {
+    color:#0A1045;
+}
+
+/* Main */
+main {
+    flex-grow: 1;
+}
+
+#hero-section {
+    padding: 60px 0 30px 0;
+    background-color: #0A1045; 
+}
+
+#hero-section p {
+    font-size: 20px;
+    color: #fff;
+}
+
+#hero-section p span {
+    font-weight: bold;
+}
+
+#hero-section .scroll-down {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#hero-section .scroll-down .img-container {
+    margin: 6px auto 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+#hero-section .scroll-down img {
+    width: 100%;
+}
+
+/* About Me */
+#about-me {
+    padding: 70px 0;
+}
+
+#about-me .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me .profile-image-container {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 26px;
+}
+
+#about-me img {
+    border-radius: 50%;
+    width: 100%;
+    height: 150px;
+}
+
+#about-me .self-description p {
+    font-size: 14px;
+    color: #0A1045;
+    margin-bottom: 20px;
+}
+
+#about-me .self-description {
+    text-align: center;
+}
+
+#about-me .self-description button {
+    border: none;
+    width: 176px;
+    height: 45px;
+    font-size: 1rem;
+    background-color: #1D84D7;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* Projects */
+#projects {
+    background-color: #0A1045;
+    padding: 70px 0 56px 0;
+}
+
+#projects h2 {
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects .project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+#projects .project-card {
+    width: 320px;
+    background-color: #fff;
+}
+
+#projects .project-card .card-image-container {
+    height: 100%;
+}
+
+#projects .card-image-container img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#projects .project-card .card-main-contain {
+    padding: 13px 18px;
+    color: #0A1045; 
+}
+
+#projects .card-main-contain h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+#projects .card-main-contain p {
+    margin-bottom: 19px;
+}
+
+#projects .card-main-contain button {
+    width: 110px;
+    height: 27px;
+    border: none;
+    background-color: #1D84D7;
+    color: #fff;
+    padding: 4px 18px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 1rem;
+}
+
+#projects button.load-projects {
+    width: 172px;
+    height: 35px;
+    margin: 60px auto 0 auto;
+    display: block;
+    border: none;
+    background-color: #1D84D7;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 72px 0 17px 0;
+}
+
+footer p {
+    font-size: 18px;
+    color: #0A1045;
+}
+
+footer .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer .right-side {
+    margin-top: 41px;
+    display: flex;
+    gap: 15px;
+}
+
+footer .right-side img {
+    width: 36px;
+    height: 36px;
+}
+
+footer .copyright {
+    margin-top: 93px;
+    text-align: center;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 0 65px;
+    }
+
+    header .container {
+        display: flex;
+        justify-self: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        display: block;
+        width: fit-content;
+        background-color: #0A1045;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 16px;
+    }
+
+    header .nav-link {
+        font-size: 1.1rem;
+        color: #fff;
+    }
+
+    #hero-section p {
+        font-size: 1.3rem;
+    }
+
+    #hero-section .scroll-down {
+        margin-top: 50px;
+    }
+
+    #about-me {
+        padding: 100px 0;
+    }
+
+    #about-me .profile-image-container {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 48px;
+    }
+
+    #about-me img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about-me .self-description p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    #about-me button {
+        width: 190px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+
+    #projects {
+        padding: 100px 0 86px 0;
+    }
+
+    #projects h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    #projects .project-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #projects .project-card {
+        width: 300px;
+    }
+
+    #projects .project-card .card-main-contain {
+        padding: 18px 23px;
+    }
+
+    #projects .card-main-contain button {
+        width: 130px;
+        height: 37px;
+        padding: 4px 18px;
+        font-size: 1.1rem;
+    }
+
+    #projects button.load-projects {
+        width: 190px;
+        height: 45px;
+        margin: 70px auto 0 auto;
+        font-size: 1.1rem;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    footer .right-side {
+        margin-top: 0;
+    }
+
+    footer .copyright {
+        margin-top: 120px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        padding: 0 90px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header .nav-link {
+        font-size: 1.2rem;
+    }
+
+    header nav ul {
+        gap: 24px;
+    }
+
+    #hero-section {
+        padding: 100px 0 50px 0;
+    }
+
+    #hero-section p {
+        font-size: 1.5rem;
+    }
+
+    #hero-section .scroll-down .img-container {
+        margin: 16px auto 0 auto;
+        width: 50px;
+        height: 50px;
+    }
+
+    #about-me {
+        padding: 108px 0;
+    }
+
+    #about-me .content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    #about-me .self-description {
+        text-align: left;
+        width: 58%;
+    }
+
+    #about-me .self-description p {
+        font-size: 28px;
+    }
+
+    #about-me .profile-image-container {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 0;
+    }
+
+    #about-me button {
+        width: 231px;
+        height: 61px;
+        font-size: 1.4rem;
+    }
+
+    #projects {
+        padding: 108px 0;
+    }
+
+    #projects h2 {
+        font-size: 42px;
+        margin-bottom: 39px;
+    }
+
+    #projects .project-cards {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #projects .project-card {
+        width: 354px;
+    }
+
+    #projects .card-main-contain h3 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    #projects .card-main-contain button {
+        width: 151px;
+        font-size: 1.2rem;
+    }
+
+    #projects .card-main-contain p {
+        margin-bottom: 1.3rem;
+    }
+
+    #projects button.load-projects {
+        width: 222px;
+        height: 52px;
+        margin: 81px auto 0 auto;
+        font-size: 1.3rem;
+    }
+
+    footer .container {
+        align-items: stretch;
+    }
+
+    footer .left-side h1 {
+        font-size: 34px;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    footer .right-side {
+        gap: 20px;
+    }
+
+    footer .right-side img {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,1 @@
+This is a project created by CoderSchool to test beginners their skills in HTML, CSS, and JavaScript.
