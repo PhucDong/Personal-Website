@@ -57,9 +57,13 @@ header nav {
     top: 100%;
     left: 0;
     width: 100%;
+    display: none;
+}
+
+.appear {
+    display: block;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #fff;
-    display: none;
 }
 
 header nav ul {
@@ -280,6 +284,7 @@ footer .copyright {
         display: block;
         width: fit-content;
         background-color: #0A1045;
+        box-shadow: none;
     }
 
     header nav ul {
