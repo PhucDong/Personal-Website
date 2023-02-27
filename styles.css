@@ -279,7 +279,7 @@ footer .copyright {
         display: none;
     }
 
-    header nav {
+    header nav.navbar {
         position: static;
         display: block;
         width: fit-content;
